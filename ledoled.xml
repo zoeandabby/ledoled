@@ -10,41 +10,61 @@
         <next>
           <block type="movement_stutter" id="41">
             <next>
-              <block type="robot_delay" id="109" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="110">
-                    <field name="NUM">2000</field>
-                  </block>
-                </value>
+              <block type="oled_drawtext" id="184">
+                <field name="TEXT">I AM SCARED!!</field>
                 <next>
-                  <block type="movement_forward" id="21">
+                  <block type="robot_delay" id="109" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="110">
+                        <field name="NUM">2000</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="robot_delay" id="105" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="106">
-                            <field name="NUM">2000</field>
-                          </block>
-                        </value>
+                      <block type="movement_forward" id="21">
                         <next>
-                          <block type="movement_stutter" id="31">
+                          <block type="robot_delay" id="105" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="106">
+                                <field name="NUM">2000</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="robot_delay" id="107" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="108">
-                                    <field name="NUM">2000</field>
-                                  </block>
-                                </value>
+                              <block type="movement_stutter" id="31">
                                 <next>
-                                  <block type="movement_reverse" id="51">
+                                  <block type="oled_drawtext" id="193">
+                                    <field name="TEXT">WHY MEEEE!?!?!?!?</field>
                                     <next>
-                                      <block type="robot_delay" id="111" inline="true">
+                                      <block type="robot_delay" id="107" inline="true">
                                         <value name="DELAY">
-                                          <block type="math_number" id="112">
+                                          <block type="math_number" id="108">
                                             <field name="NUM">2000</field>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="movement_stop" id="70"></block>
+                                          <block type="movement_reverse" id="51">
+                                            <next>
+                                              <block type="robot_delay" id="111" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="112">
+                                                    <field name="NUM">2000</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="led_select" id="166" inline="true">
+                                                    <field name="ACTION">FLASH</field>
+                                                    <next>
+                                                      <block type="oled_color" id="157">
+                                                        <field name="OBJECT">BLACK</field>
+                                                        <next>
+                                                          <block type="movement_stop" id="70"></block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
                                         </next>
                                       </block>
                                     </next>
