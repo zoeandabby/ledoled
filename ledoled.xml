@@ -1,1 +1,68 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="11" x="416" y="-14">
+    <next>
+      <block type="robot_delay" id="97" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="104">
+            <field name="NUM">2000</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_stutter" id="41">
+            <next>
+              <block type="robot_delay" id="109" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="110">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_forward" id="21">
+                    <next>
+                      <block type="robot_delay" id="105" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="106">
+                            <field name="NUM">2000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_stutter" id="31">
+                            <next>
+                              <block type="robot_delay" id="107" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="108">
+                                    <field name="NUM">2000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_reverse" id="51">
+                                    <next>
+                                      <block type="robot_delay" id="111" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="112">
+                                            <field name="NUM">2000</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_stop" id="70"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
